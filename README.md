@@ -1,5 +1,5 @@
-#Viral Genome Assembly Project
-###Testing pipeline for assembly HCV genome (9600bp). In this project I'm trying to assembly fragment 1 of HCV genome (length 5400bp)
+# Viral Genome Assembly Project
+### Testing pipeline for assembly HCV genome (9600bp). In this project I'm trying to assembly fragment 1 of HCV genome (length 5400bp)
 ```bash
 bwa mem ref/reftype1.fasta HCVB/L86Y3-20240822-HCV-B_S14_L001_R1_001.fastq.gz HCVB/L86Y3-20240822-HCV-B_S14_L001_R2_001.fastq.gz | samtools view -h -b -o HCVB.bam
 samtools view -b -F 0xc HCVB.bam -o HCVB.filtered.bam
@@ -13,4 +13,4 @@ bedtools bamtofastq -i HCVB.dedup.sorted.bam -fq HCVB.dedup.R1.fastq -fq2 HCVB.d
 gzip HCVB.*fastq
 unicycler -1 HCVB/HCVB.dedup.R1.fastq.gz -2 HCVB/HCVB.dedup.R2.fastq.gz -l ref/reftype1.fasta -t 20 -o unicyclerhybird_HCVB --keep 3
 ```
-###Code easy but my strength knowledge in molecular biology,genomics and biology more important to finish this project!!!
+### Code easy but my strength knowledge in molecular biology,genomics and biology more important to finish this project!!!
