@@ -23,4 +23,4 @@ bedtools bamtofastq -i HCVB.dedup.sorted.bam -fq HCVB.dedup.R1.fastq -fq2 HCVB.d
 gzip HCVB.*fastq
 unicycler -1 HCVB/HCVB.dedup.R1.fastq.gz -2 HCVB/HCVB.dedup.R2.fastq.gz -l ref/reftype1.fasta -t 20 -o unicyclerhybird_HCVB --keep 3
 ```
-### Code easy but my strength knowledge in molecular biology,genomics and biology more important to finish this project!!!
+### Code easy but my strength of knowledge in molecular biology,genomics and biology more important to finish this project!!!
