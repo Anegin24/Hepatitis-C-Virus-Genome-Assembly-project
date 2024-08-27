@@ -1,4 +1,12 @@
 # Viral Genome Assembly Project
+### dependencies
+```bash
+bwa
+samtools
+bedtools
+unicycler
+bandage
+```
 ### Testing pipeline for assembly HCV genome (9600bp). In this project I'm trying to assembly fragment 1 of HCV genome (length 5400bp)
 ```bash
 bwa mem ref/reftype1.fasta HCVB/L86Y3-20240822-HCV-B_S14_L001_R1_001.fastq.gz HCVB/L86Y3-20240822-HCV-B_S14_L001_R2_001.fastq.gz | samtools view -h -b -o HCVB.bam
