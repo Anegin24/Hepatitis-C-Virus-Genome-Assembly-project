@@ -1,17 +1,11 @@
 # Viral Genome Assembly Project
-### Dependencies
-```bash
-bwa
-samtools
-bedtools
-unicycler
-bandage
-```
 ### Testing pipeline for assembly HCV genome (9600bp). In this project I'm trying to assembly fragment 1 of HCV genome (length 5400bp)
 #### Dependencies
 ```bash
 bwa
 samtools
+igv
+clustalo
 bedtools
 unicycler
 bandage
